@@ -1,0 +1,17 @@
+#p{
+    background: red;
+}
+
+#p.p{
+    background: yellow;
+}
+
+body#b.b-class p#p.p{
+    background: purple !important;
+}
+
+body#b.b-class p#p.p{
+    color:chocolate !important;
+    background-color: aqua !important;
+}
+

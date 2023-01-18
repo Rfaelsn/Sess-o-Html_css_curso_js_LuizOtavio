@@ -1,0 +1,52 @@
+ ul li:nth-child(odd){
+    background-color: blueviolet;
+    list-style: none;
+ }
+
+ ul li:nth-child(even){
+    background-color: aqua;
+    list-style: none;
+}
+
+.lista-intervalo li:nth-child(2n+3){
+    background-color: brown;
+}
+
+ul li::after{
+    content: '-';
+    background-color: cadetblue;
+    color:#fff;
+
+}
+
+ul li::before{
+    content: '-';
+    background-color: cadetblue;
+    color:#fff;
+
+}
+
+p{
+    font-size: 32px;
+}
+
+.paragrafo-destaque::first-letter{
+    font-size: 150px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.paragrafo-destaque::first-line{
+    background-color: aqua;
+}
+
+.paragrafo-destaque::selection{
+    background-color: aquamarine;
+    color: purple;
+}
+
+::placeholder{
+    color: rgb(11, 131, 91);
+}
+

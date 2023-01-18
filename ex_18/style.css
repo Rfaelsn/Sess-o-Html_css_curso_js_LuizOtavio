@@ -1,0 +1,10 @@
+ul{
+    height: 200px;
+    overflow-y: auto;
+}
+
+ul li.sticky-index{
+    position: sticky;
+    top: 0;
+    background: teal;
+}

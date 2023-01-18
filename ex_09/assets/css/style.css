@@ -1,0 +1,12 @@
+p:not(.meio){
+    color: aqua;
+}
+
+input:not(:checked)+p{
+    background-color: blueviolet;
+}
+
+input:checked + p{
+    background-color: coral;
+}
+

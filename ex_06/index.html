@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+    <style>
+        label {
+            cursor: pointer;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="get" autocomplete="off" target="_blank">
+        <p>Meu formulário</p>
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" placeholder="O seu nome">
+        <p>
+            <label for="dev">Sou um dev</label>
+            <input type="checkbox" id="dev" name="dev" checked="checked" value="sim">
+        </p>
+        <p>
+            <label for="gnr_masc" name="genero_radio">masculino</label>
+            <input type="radio" name="genero_radio" id="gnr_masc" value="masculino"><br>
+            <!--outro radio-->
+            <label for="gnr_feminino">feminino</label>
+            <input type="radio" name="genero_radio" id="gnr_feminino" value="feminino"><br>
+            <!--outro radio-->
+            <label for="gnr_outro">Outro</label>
+            <input type="radio" name="genero_radio" id="gnr_outro" value="Outro"><br>
+        </p>
+        <p>
+            <label for="data">Selecione a data</label>
+            <input type="date" name="data" id="data" value="2001-04-18">
+        </p>
+        <p>
+            <label for="data_tempo">informe data e hora</label>
+            <input type="datetime-local" name="data_tempo" id="data_tempo" value="2001-04-18T14:00">
+        </p>
+        <p>
+            <label for="tempo">informe a hora</label>
+            <input type="time" name="tempo" id="tempo" value="14:00:01">
+        </p>
+        <p>
+            <label for="cor">Selecione uma cor</label>
+            <input type="color" name="cor" id="cor" value="#0DEA8C">
+        </p>
+        <p>
+            <label for="email">informe a hora</label>
+            <input type="email" name="email" id="email" placeholder="exemplo@gmail.com">
+        </p>
+        <p>
+            <label for="file">envie seu arquivo aqui</label><br>
+            <input type="file" name="file" id="file" accept=".png,.svg,images/*" multiple>
+        </p>
+        <p>
+            <label for="number">input Number</label>
+            <input type="number" name="number" id="number" placeholder="digite um número" min="0" max="100" step="5">
+        </p>
+        <p>
+            <label for="senha">sua senha</label>
+            <input type="password" name="senha" id="senha" placeholder="digite sua senha">
+        </p>
+        <p>
+            <label for="range">testando input range</label>
+            <input type="range" name="range" id="range" min="0" max="20" step="2" list="tickmarks">
+
+            <datalist id="tickmarks">
+                <option value="0" label="0%">
+                <option value="10">
+                <option value="20">
+                <option value="30">
+                <option value="40">
+                <option value="50" label="50%">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="90">
+                <option value="100" label="100%">
+            </datalist>
+        </p>
+        <p>
+            <label for="url">sua url:</label>
+            <input type="url" name="url" id="url" placeholder="digite uma url">
+        </p>
+
+        <p>
+            <label for="search">sua pesquisa:</label>
+            <input type="search" name="search" id="search" placeholder="pesquisar">
+        </p>
+        <p>
+            <label for="select">selecione um item:</label><br>
+            <select name="select" id="select" >
+                <optgroup label="categoria 1">
+                    <option value="val_tetorno" label="valor mostrado">
+                    <option value="val_tetorno2" label="valor mostrado2" selected>
+                    <option value="val_tetorn3" label="valor mostrado"3 disabled>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="textarea">sua text area</label>
+            <textarea name="textarea" id="textarea" maxlength="255">valor padrão</textarea> 
+        </p>
+        <p>
+            <button type="reset">reset</button>
+            <button type="submit">enviar</button>
+        </p>
+    </form>
+</body>
+
+</html>

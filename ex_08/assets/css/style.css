@@ -1,0 +1,60 @@
+.classe-interior:hover{
+    color: royalblue;
+}
+
+.classe-interior{
+    transition: all 300ms ease-in-out;
+}
+
+a{
+    color:orange;
+}
+
+a:hover{
+    background: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+
+a:link{
+    color: darkcyan;
+}
+
+a:visited{
+    color: darkgoldenrod;
+}
+
+a:active{
+    background: cyan;
+    color: greenyellow;
+}
+
+input:focus{
+    box-shadow:  0 0 15px rgba(0,206,209,1.0);
+    outline:none;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+input:disabled{
+    background-color: blueviolet;
+    cursor: not-allowed;
+}
+
+input:checked+p{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.pai .lista li:first-child{
+    background-color: blueviolet;
+}
+
+.pai .lista li:last-child{
+    background-color: cadetblue;
+}
+
+input:required{
+    border-radius: 10px;
+    border-color: aqua;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table th,
+        table td {
+            text-align: left;
+            border: 2px solid #ccc;
+            padding: 10px;
+        }
+
+        table caption{
+            caption-side: bottom;
+            text-align: left;
+            font-style: italic;
+            font-size: 14px;
+            margin:10px 0;
+        }
+        table{
+            border-collapse: collapse;
+            width: 800px;
+        }
+        tfoot td, table th{
+            background: #ddd;
+        }
+
+        tfoot td{
+            font-style: italic;
+        }
+        .responsive-table{
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="responsive-table">
+        <table>
+            <caption>este é uma descrição da tabela</caption>
+            <thead>
+                <tr>
+                    <th>Coluna 1</th>
+                    <th>Coluna 2</th>
+                    <th>Coluna 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>conteúdo 1</td>
+                    <td>conteúdo 2</td>
+                    <td rowspan="2">conteúdo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">conteúdo 4</td>
+                </tr>
+                <tr>
+                    <td>conteúdo 7</td>
+                    <td>conteúdo 8</td>
+                    <td>conteúdo 9</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>conteúdo 10</td>
+                    <td>conteúdo 11</td>
+                    <td>conteúdo 12</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
