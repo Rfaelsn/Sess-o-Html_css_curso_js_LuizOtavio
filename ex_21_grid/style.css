@@ -10,5 +10,25 @@ body{
 }
 
 .grid{
+    max-width: 800px;
+    margin: 0 auto;
     display: grid;
+    grid-template-columns: [um] 1fr 
+    [dois] 1fr
+    [tres] 1fr
+    [quatro];
+}
+
+.grid div{
+    background: tomato;
+    min-height: 100px;
+    margin: 30px;
+}
+
+.grid div:nth-child(5){
+    background: aquamarine;
+    /* grid-column-start: ;
+    grid-column-end: ; */
+    /* grid-column: span 2 / quatro; */
+    /* grid-area: 1 / 1/ 4 / 4; */
 }
